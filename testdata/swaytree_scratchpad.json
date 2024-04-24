@@ -1,0 +1,577 @@
+{
+  "id": 1,
+  "type": "root",
+  "orientation": "horizontal",
+  "percent": null,
+  "urgent": false,
+  "marks": [],
+  "focused": false,
+  "layout": "splith",
+  "border": "none",
+  "current_border_width": 0,
+  "rect": {
+    "x": 0,
+    "y": 0,
+    "width": 1920,
+    "height": 1080
+  },
+  "deco_rect": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "window_rect": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "name": "root",
+  "window": null,
+  "nodes": [
+    {
+      "id": 2147483647,
+      "type": "output",
+      "orientation": "horizontal",
+      "percent": null,
+      "urgent": false,
+      "marks": [],
+      "focused": false,
+      "layout": "output",
+      "border": "none",
+      "current_border_width": 0,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "deco_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "window_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "name": "__i3",
+      "window": null,
+      "nodes": [
+        {
+          "id": 2147483646,
+          "type": "workspace",
+          "orientation": "horizontal",
+          "percent": null,
+          "urgent": false,
+          "marks": [],
+          "focused": false,
+          "layout": "splith",
+          "border": "none",
+          "current_border_width": 0,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080
+          },
+          "deco_rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "window_rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "name": "__i3_scratch",
+          "window": null,
+          "nodes": [],
+          "floating_nodes": [
+            {
+              "id": 9,
+              "type": "floating_con",
+              "orientation": "none",
+              "percent": null,
+              "urgent": false,
+              "marks": [],
+              "focused": false,
+              "layout": "none",
+              "border": "pixel",
+              "current_border_width": 2,
+              "rect": {
+                "x": 486,
+                "y": 171,
+                "width": 947,
+                "height": 766
+              },
+              "deco_rect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              },
+              "window_rect": {
+                "x": 2,
+                "y": 2,
+                "width": 943,
+                "height": 762
+              },
+              "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 700,
+                "height": 500
+              },
+              "name": "foot",
+              "window": null,
+              "nodes": [],
+              "floating_nodes": [],
+              "focus": [],
+              "fullscreen_mode": 0,
+              "sticky": false,
+              "pid": 7104,
+              "app_id": "foot",
+              "visible": false,
+              "max_render_time": 0,
+              "shell": "xdg_shell",
+              "inhibit_idle": false,
+              "idle_inhibitors": {
+                "user": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "focus": [
+            9
+          ],
+          "fullscreen_mode": 1,
+          "sticky": false
+        }
+      ],
+      "floating_nodes": [],
+      "focus": [
+        2147483646
+      ],
+      "fullscreen_mode": 0,
+      "sticky": false
+    },
+    {
+      "id": 3,
+      "type": "output",
+      "orientation": "none",
+      "percent": 1.0,
+      "urgent": false,
+      "marks": [],
+      "focused": false,
+      "layout": "output",
+      "border": "none",
+      "current_border_width": 0,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      },
+      "deco_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "window_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "name": "HDMI-A-2",
+      "window": null,
+      "nodes": [
+        {
+          "id": 4,
+          "type": "workspace",
+          "orientation": "horizontal",
+          "percent": null,
+          "urgent": false,
+          "marks": [],
+          "focused": false,
+          "layout": "splith",
+          "border": "none",
+          "current_border_width": 0,
+          "rect": {
+            "x": 17,
+            "y": 46,
+            "width": 1886,
+            "height": 1017
+          },
+          "deco_rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "window_rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "name": "1",
+          "window": null,
+          "nodes": [
+            {
+              "id": 8,
+              "type": "con",
+              "orientation": "none",
+              "percent": 1.0,
+              "urgent": false,
+              "marks": [],
+              "focused": true,
+              "layout": "none",
+              "border": "pixel",
+              "current_border_width": 2,
+              "rect": {
+                "x": 17,
+                "y": 46,
+                "width": 1886,
+                "height": 1017
+              },
+              "deco_rect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              },
+              "window_rect": {
+                "x": 2,
+                "y": 2,
+                "width": 1882,
+                "height": 1013
+              },
+              "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 700,
+                "height": 500
+              },
+              "name": "foot",
+              "window": null,
+              "nodes": [],
+              "floating_nodes": [],
+              "focus": [],
+              "fullscreen_mode": 0,
+              "sticky": false,
+              "pid": 6019,
+              "app_id": "foot",
+              "visible": true,
+              "max_render_time": 0,
+              "shell": "xdg_shell",
+              "inhibit_idle": false,
+              "idle_inhibitors": {
+                "user": "none",
+                "application": "none"
+              }
+            }
+          ],
+          "floating_nodes": [],
+          "focus": [
+            8
+          ],
+          "fullscreen_mode": 1,
+          "sticky": false,
+          "num": 1,
+          "output": "HDMI-A-2",
+          "representation": "H[foot]"
+        }
+      ],
+      "floating_nodes": [],
+      "focus": [
+        4
+      ],
+      "fullscreen_mode": 0,
+      "sticky": false,
+      "primary": false,
+      "make": "Samsung Electric Company",
+      "model": "LS27A40xU",
+      "serial": "H4TW301133",
+      "modes": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "refresh": 60000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "refresh": 74973,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "refresh": 60000,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "refresh": 59940,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "refresh": 50000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "refresh": 50000,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 1680,
+          "height": 1050,
+          "refresh": 59883,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1600,
+          "height": 900,
+          "refresh": 60000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1280,
+          "height": 1024,
+          "refresh": 75025,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1280,
+          "height": 1024,
+          "refresh": 60020,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "refresh": 59901,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1280,
+          "height": 800,
+          "refresh": 59910,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1152,
+          "height": 864,
+          "refresh": 75000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "refresh": 60000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "refresh": 60000,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "refresh": 59940,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "refresh": 50000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "refresh": 50000,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "refresh": 75029,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "refresh": 70069,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "refresh": 60004,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 832,
+          "height": 624,
+          "refresh": 74551,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "refresh": 75000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "refresh": 72188,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 800,
+          "height": 600,
+          "refresh": 60317,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 720,
+          "height": 576,
+          "refresh": 50000,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 720,
+          "height": 480,
+          "refresh": 60000,
+          "picture_aspect_ratio": "4:3"
+        },
+        {
+          "width": 720,
+          "height": 480,
+          "refresh": 60000,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 720,
+          "height": 480,
+          "refresh": 59940,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 720,
+          "height": 480,
+          "refresh": 59940,
+          "picture_aspect_ratio": "16:9"
+        },
+        {
+          "width": 640,
+          "height": 480,
+          "refresh": 75000,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 640,
+          "height": 480,
+          "refresh": 72809,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 640,
+          "height": 480,
+          "refresh": 66667,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 640,
+          "height": 480,
+          "refresh": 60000,
+          "picture_aspect_ratio": "4:3"
+        },
+        {
+          "width": 640,
+          "height": 480,
+          "refresh": 59940,
+          "picture_aspect_ratio": "none"
+        },
+        {
+          "width": 720,
+          "height": 400,
+          "refresh": 70082,
+          "picture_aspect_ratio": "none"
+        }
+      ],
+      "non_desktop": false,
+      "active": true,
+      "dpms": true,
+      "power": true,
+      "scale": 1.0,
+      "scale_filter": "nearest",
+      "transform": "normal",
+      "adaptive_sync_status": "disabled",
+      "current_workspace": "1",
+      "current_mode": {
+        "width": 1920,
+        "height": 1080,
+        "refresh": 60000,
+        "picture_aspect_ratio": "none"
+      },
+      "max_render_time": 0
+    }
+  ],
+  "floating_nodes": [],
+  "focus": [
+    3
+  ],
+  "fullscreen_mode": 0,
+  "sticky": false
+}
