@@ -1,0 +1,34 @@
+[
+  {
+    "id": 5,
+    "name": "foot",
+    "app_id": "foot",
+    "marks": [],
+    "scratchpad": false,
+    "type": "con"
+  },
+  {
+    "id": 35,
+    "name": "ld - Thunar",
+    "app_id": "thunar",
+    "marks": [],
+    "scratchpad": false,
+    "type": "con"
+  },
+  {
+    "id": 37,
+    "name": "foot",
+    "app_id": "foot",
+    "marks": [],
+    "scratchpad": false,
+    "type": "con"
+  },
+  {
+    "id": 9,
+    "name": "why picture is darker using mpv (compared to mpc, potplayer) ? : r/mpv — Mozilla Firefox",
+    "app_id": "firefox",
+    "marks": [],
+    "scratchpad": false,
+    "type": "con"
+  }
+]
