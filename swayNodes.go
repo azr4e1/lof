@@ -17,12 +17,13 @@ const (
 )
 
 type BaseNode struct {
-	Id         int           `json:"id"`
-	Name       string        `json:"name"`
-	AppId      string        `json:"app_id"`
-	Marks      []string      `json:"marks"`
-	ScratchPad bool          `json:"scratchpad"`
-	Type       ContainerType `json:"type"`
+	Id        int           `json:"id"`
+	Name      string        `json:"name"`
+	AppId     string        `json:"app_id"`
+	Marks     []string      `json:"marks"`
+	Type      ContainerType `json:"type"`
+	Workspace string        `json:"workspace"`
+	Focused   bool          `json:"focused"`
 }
 
 type Node struct {
@@ -33,7 +34,6 @@ type Node struct {
 
 type FlattenedNodes []*BaseNode
 
-// TODO: to test
 func (bn *BaseNode) IsContainer() bool {
 	if bn == nil {
 		return false
@@ -58,13 +58,6 @@ func (bn *BaseNode) IsTrueWindow() bool {
 }
 
 // TODO: to test
-func markScratchpad(fn FlattenedNodes) {
-	for _, el := range fn {
-		el.ScratchPad = true
-	}
-}
-
-// TODO: to test
 func (n *Node) Flatten() FlattenedNodes {
 	var flatNodes = []*BaseNode{}
 	if n == nil {
@@ -73,19 +66,22 @@ func (n *Node) Flatten() FlattenedNodes {
 
 	// append current
 	flatNodes = append(flatNodes, &BaseNode{
-		Id:         n.Id,
-		Name:       n.Name,
-		AppId:      n.AppId,
-		Marks:      n.Marks,
-		ScratchPad: n.ScratchPad,
-		Type:       n.Type,
+		Id:        n.Id,
+		Name:      n.Name,
+		AppId:     n.AppId,
+		Marks:     n.Marks,
+		Type:      n.Type,
+		Workspace: n.Workspace,
+		Focused:   n.Focused,
 	})
 
+	workspace := n.Workspace
+	if n.Type == WorkspaceContainer {
+		workspace = n.Name
+	}
 	for _, node := range append(n.Nodes, n.FloatingNodes...) {
+		node.Workspace = workspace
 		newNodes := node.Flatten()
-		if node.Name == string(ScratchpadContainer) {
-			markScratchpad(newNodes)
-		}
 
 		flatNodes = append(flatNodes, newNodes...)
 	}
@@ -105,6 +101,7 @@ func (fn FlattenedNodes) Filter(criteria FilterCriteria) FlattenedNodes {
 	return filterNodes
 }
 
+// TODO: to test
 func (fn FlattenedNodes) ToJSON() ([]byte, error) {
 	data, err := json.Marshal(fn)
 
