@@ -128,3 +128,23 @@ outer:
 
 	return window.Id, nil
 }
+
+// TODO: to test
+func GetIdFromFocused(fn FlattenedNodes) (int, error) {
+	window := new(BaseNode)
+	for _, bn := range fn {
+		if bn == nil {
+			continue
+		}
+		if bn.Focused {
+			window = bn
+			break
+		}
+	}
+
+	if window == nil {
+		return 0, fmt.Errorf("No window in focus")
+	}
+
+	return window.Id, nil
+}
