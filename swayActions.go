@@ -45,7 +45,8 @@ func GetTree() (*Node, error) {
 	return node, nil
 }
 
-func OutputWindows(tree *Node, criteria FilterCriteria) FlattenedNodes {
+// TODO: to test
+func GetWindows(tree *Node, criteria FilterCriteria) FlattenedNodes {
 	return tree.Flatten().Filter(criteria)
 }
 
