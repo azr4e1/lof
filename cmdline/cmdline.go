@@ -48,7 +48,7 @@ func (av actionValue) Set(s string) error {
 	}
 
 	if !slices.Contains(av.validActions, s) {
-		return fmt.Errorf("Actions %s is not valid. Valid actions are: %s", s, strings.Join(av.validActions, ", "))
+		return fmt.Errorf("%s is not a valid action. Valid actions are: %s", s, strings.Join(av.validActions, ", "))
 	}
 
 	*(av.action) = s
@@ -166,7 +166,7 @@ func Main() ErrorCode {
 
 		fmt.Fprintln(os.Stdout, string(windows))
 	default:
-
+		flag.Usage()
 	}
 
 	return 0
