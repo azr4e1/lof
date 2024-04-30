@@ -1,9 +1,11 @@
 package main
 
 import (
+	"os"
+
 	"github.com/azr4e1/lof/cmdline"
 )
 
 func main() {
-	cmdline.Main()
+	os.Exit(int(cmdline.Main()))
 }
