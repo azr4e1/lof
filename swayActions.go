@@ -73,3 +73,13 @@ func Launch(cmd string) error {
 
 	return err
 }
+
+// TODO: to test
+func Close(wCriteria WindowCriteria, value string) error {
+	c := exec.Command("swaymsg", fmt.Sprintf("[%s=%s] kill", string(wCriteria), value))
+
+	err := c.Run()
+
+	return err
+}
+
