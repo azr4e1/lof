@@ -106,3 +106,25 @@ func RemoveMark(mark string, wCriteria WindowCriteria, value string) error {
 	return err
 }
 
+// TODO: to test
+func GetIdFromMark(fn FlattenedNodes, mark string) (int, error) {
+	window := new(BaseNode)
+outer:
+	for _, bn := range fn {
+		if bn == nil {
+			continue
+		}
+		for _, curMark := range bn.Marks {
+			if curMark == mark {
+				window = bn
+				break outer
+			}
+		}
+	}
+
+	if window == nil {
+		return 0, fmt.Errorf("No window with mark %s", mark)
+	}
+
+	return window.Id, nil
+}
