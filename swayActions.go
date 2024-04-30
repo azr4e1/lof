@@ -50,14 +50,16 @@ func GetWindows(tree *Node, criteria FilterCriteria) FlattenedNodes {
 	return tree.Flatten().Filter(criteria)
 }
 
+// TODO: to test
 func Focus(wCriteria WindowCriteria, value string) error {
-	swayMsg := exec.Command("swaymsg", fmt.Sprintf("[%s=%s]", string(wCriteria), value), "focus")
+	swayMsg := exec.Command("swaymsg", fmt.Sprintf("[%s=%s] focus", string(wCriteria), value))
 
-	_, err := swayMsg.CombinedOutput()
+	err := swayMsg.Run()
 
 	return err
 }
 
+// TODO: to test
 func Launch(cmd string) error {
 	fields := strings.Fields(cmd)
 	if len(fields) < 1 {
@@ -67,7 +69,7 @@ func Launch(cmd string) error {
 	path := fields[0]
 	c := exec.Command(path, fields[1:]...)
 
-	_, err := c.CombinedOutput()
+	err := c.Run()
 
 	return err
 }
