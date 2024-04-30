@@ -91,3 +91,11 @@ func ToggleMark(mark string, wCriteria WindowCriteria, value string) error {
 	return err
 }
 
+// TODO: to test
+func AddMark(mark string, wCriteria WindowCriteria, value string) error {
+	swayMsg := exec.Command("swaymsg", fmt.Sprintf("[%s=%s] mark --add %s", string(wCriteria), value, mark))
+	err := swayMsg.Run()
+
+	return err
+}
+
